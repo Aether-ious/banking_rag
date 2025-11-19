@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "banking_rag"
+version = "0.1.0"
+description = "Banking Compliance RAG API"
+authors = ["Your Name <you@example.com>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.0"
+uvicorn = "^0.30.6"
+python-multipart = "^0.0.9"
+# Locked versions that definitely work together
+langchain = "^0.1.16"
+langchain-community = "^0.0.34"
+langchain-openai = "^0.1.3"
+langchain-core = "^0.1.45"
+chromadb = "^0.4.24"
+pypdf = "^4.2.0"
+tiktoken = ">=0.7.0" # Force newer version
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
